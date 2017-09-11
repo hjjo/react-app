@@ -38,6 +38,7 @@ module.exports = config => {
         bs.init({
           port: process.env.PORT || 3000,
           ui: { port: Number(process.env.PORT || 3000) + 1 },
+          open: false,
           server: {
             baseDir: 'public',
             middleware: [
